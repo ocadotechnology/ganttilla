@@ -1,9 +1,16 @@
 [
   {
-    "title": "Build a Death Start",
-    "description": "<!-- #SWIMLANE:Domination -->\r\n\r\nDestroy all the rebels",
-    "start_date": "2018-12-29",
+    "title": "Build a Death Star",
+    "description": "<!-- #SWIMLANE:Domination -->\r\n\r\nDestroy all the Rebels",
+    "start_date": "2018-12-01",
     "end_date": "2019-02-09",
+    "link": "https://github.com/ocadotechnology/ganttilla"
+  },
+  {
+    "title": "Escape from Hoth",
+    "description": "<!-- #SWIMLANE:War -->\r\n\r\nDestroy the Rebel base",
+    "start_date": "2018-11-01",
+    "end_date": "2018-11-30",
     "link": "https://github.com/ocadotechnology/ganttilla"
   }
 ]
