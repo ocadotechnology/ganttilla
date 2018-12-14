@@ -51,7 +51,7 @@ export class ChartComponent implements OnInit {
                     .sort((a, b) => new Date(a.end_date).getTime() - new Date(b.end_date).getTime())
                     .map(milestone => {
                         if (!milestone.category) {
-                            const cat = this.getCategory(milestone.description);
+                            const cat = milestone.swimlane;
                             milestone.category = cat ? cat : milestone.title;
                         }
                         this.swimlanes.add(milestone.category);
@@ -65,17 +65,6 @@ export class ChartComponent implements OnInit {
 
     }
 
-
-    public getCategory(str: string): string {
-        const regexp = /#SWIMLANE:(\w+)/;
-        let match = regexp.exec(str);
-        if (match) {
-            return match[1];
-        }
-        return null;
-    }
-
-
     ngOnInit() {
         console.log('Chart component - onInit');
     } // ngOnInit - end
@@ -85,7 +74,6 @@ export class ChartComponent implements OnInit {
         let url = this.filteredId[event.row + 1];
         window.open(url, '_blank');
     }
-
 
     public ready(event: ChartReadyEvent) {
         let container = document.getElementById('timeline');
