@@ -2,11 +2,36 @@
 
 Effortless roadmap visualisation tool
 
-## Diagram of concepts
+## How it works
+
+The Ganttilla draws roadmap based on the `JSON` descriptor files in the assets directory. 
+
+### Diagram of concepts
    
 ![diagram_of concepts](diagram.png)
+
+### Descriptor file
+
+The description file should contain list of objects, each one representing block of work.
+Take for example the [src/assets/empire.json](https://github.com/ocadotechnology/ganttilla/blob/master/src/assets/empire.json).
+
+Fields `start_date` and `end_date` should store dates in yyyy-MM-dd pattern. The `swimlane` field is optional.
+
+```json
+[
+  {
+    "title": "Destroy the Death Star", 
+    "description": "Blow up that thing", 
+    "start_date": "2018-12-10",
+    "end_date": "2019-03-09", 
+    "link": "https://github.com/ocadotechnology/ganttilla", 
+    "swimlane": "Freedom" 
+  }
+]
+```
    
 ## Getting help
+
 Having trouble with Ganttilla? We'd like to help!
 
 * Ask a question - we monitor [ganttilla/issues](https://github.com/ocadotechnology/ganttilla/issues)
@@ -15,6 +40,7 @@ Having trouble with Ganttilla? We'd like to help!
 
 
 ## Reporting Issues
+
 Ganttilla uses GitHub's integrated issue tracking system to record bugs and feature
 requests. If you want to raise an issue, please follow the recommendations below:
 
@@ -38,5 +64,6 @@ To build the project you need `npm`.
 ----
 
 ## License
+
 Ganttilla is Open Source software released under the
 [Apache 2.0 license](http://www.apache.org/licenses/LICENSE-2.0.html).
