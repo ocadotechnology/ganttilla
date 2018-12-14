@@ -23,7 +23,7 @@ requests. If you want to raise an issue, please follow the recommendations below
 * If the issue doesn't already exist, [create a new issue](https://github.com/ocadotechnology/ganttilla/issues/new).
 * Please provide as much information as possible with the issue report, we like to know
   the version of Ganttilla that you are using.
-* If you need to paste code use Markdown +++```+++ escapes
+* If you need to paste code use Markdown **```** escapes
   before and after your text.
 * If possible try to create a test-case or project that replicates the issue.
 
@@ -39,4 +39,4 @@ To build the project you need `npm`.
 
 ## License
 Ganttilla is Open Source software released under the
-http://www.apache.org/licenses/LICENSE-2.0.html[Apache 2.0 license].
+[Apache 2.0 license](http://www.apache.org/licenses/LICENSE-2.0.html).
