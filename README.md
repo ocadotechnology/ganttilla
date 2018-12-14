@@ -1,6 +1,6 @@
 # Ganttilla
 
-Effortless roadmap visualisation tool
+Effortless roadmap visualisation tool. Visit [the demo page](https://youthful-leakey-912679.netlify.com/chart/empire) here to verify how it works.
 
 ## How it works
 
