@@ -2,6 +2,10 @@
 
 Effortless roadmap visualisation tool
 
+## Diagram of concepts
+   
+![diagram_of concepts](diagram.png)
+   
 ## Getting help
 Having trouble with Ganttilla? We'd like to help!
 
