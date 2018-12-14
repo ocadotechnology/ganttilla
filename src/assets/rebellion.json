@@ -1,9 +1,16 @@
 [
   {
-    "title": "Destroy the Death Start",
+    "title": "Destroy the Death Star",
     "description": "<!-- #SWIMLANE:Freedom -->\r\n\r\nBlow up that thing",
-    "start_date": "2018-02-09",
+    "start_date": "2018-12-10",
     "end_date": "2019-03-09",
+    "link": "https://github.com/ocadotechnology/ganttilla"
+  },
+  {
+    "title": "Escape Hoth",
+    "description": "<!-- #SWIMLANE:Life -->\r\n\r\nEscape from Hoth planet",
+    "start_date": "2018-11-01",
+    "end_date": "2018-11-30",
     "link": "https://github.com/ocadotechnology/ganttilla"
   }
 ]
