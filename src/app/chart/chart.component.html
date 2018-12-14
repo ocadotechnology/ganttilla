@@ -1,0 +1,5 @@
+<google-chart id="timeline" #cchart [data]="chartData"
+              (chartSelect)='clicked($event)'
+              (chartReady)='ready($event)'
+              (window:resize)='onResize($event)'></google-chart>
+
