@@ -56,11 +56,21 @@ requests. If you want to raise an issue, please follow the recommendations below
 
 ## Building from Source
 
-To build the project you need `npm`.
+You need `npm` installed on your computer. 
+
+To start the project locally run:
 
 ----
 	$ npm install
 	$ npm start
+----
+
+
+To build the project run:
+
+----
+	$ npm install
+	$ npm run-script build
 ----
 
 ## License
