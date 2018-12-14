@@ -1,6 +1,11 @@
-python:
-  enabled: true
+fail_on_violations: true
 
 tslint:
   enabled: true
   config_file: tslint.json
+javascript:
+  enabled: true
+python:
+  enabled: true
+
+
