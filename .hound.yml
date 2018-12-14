@@ -1,0 +1,5 @@
+python:
+  enabled: true
+  
+tslint:
+  enabled: true
