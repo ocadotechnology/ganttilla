@@ -1,5 +1,6 @@
 python:
   enabled: true
-  
+
 tslint:
   enabled: true
+  config_file: tslint.json
