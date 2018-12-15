@@ -24,7 +24,9 @@ export class ChartComponent implements OnInit {
             height: 700,
             timeline: {
                 groupByRowLabel: true,
-                // showRowLabels: false
+                colorByRowLabel: true,
+                rowLabelStyle: {fontName: 'Roboto'},
+                barLabelStyle: {fontName: 'Roboto'}
             }
         }
     };

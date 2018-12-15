@@ -1,6 +1,22 @@
-<mat-toolbar color="primary">
-    <mat-toolbar-row class="mat-elevation-z4">
-        <button mat-button class="menu-button" routerLinkActive="mat-accent" routerLink="/chart/empire">Empire</button>
-        <button mat-button class="menu-button" routerLinkActive="mat-accent" routerLink="/chart/rebellion">Rebellion</button>
-    </mat-toolbar-row>
+<mat-toolbar color="primary" class="mat-elevation-z6 app-header">
+
+    <a mat-button-icon class="docs-button" routerLink="/"
+       aria-label="Ganttilla">
+        <img class="app-logo"
+             src="/assets/logo.svg"
+             alt="angular">
+    </a>
+
+    <button mat-button routerLinkActive="mat-accent" routerLink="/chart/empire">Empire</button>
+    <button mat-button routerLinkActive="mat-accent" routerLink="/chart/rebellion">Rebellion</button>
+
+    <span class="fill-remaining-space"></span>
+
+
+    <a mat-button href="https://github.com/ocadotechnology/ganttilla" aria-label="GitHub Repository">
+        <img class="app-logo"
+             src="/assets/github-circle-white-transparent.svg"
+             alt="github">
+        <span>Ganttilla</span>
+    </a>
 </mat-toolbar>
