@@ -1,0 +1,19 @@
+.app-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+}
+
+.fill-remaining-space {
+    /* This fills the remaining space, by using flexbox.
+       Every toolbar row uses a flexbox row layout. */
+    flex: 1 1 auto;
+}
+
+.app-logo {
+    height: 26px;
+    margin: 0 4px 3px 0;
+    vertical-align: middle;
+}

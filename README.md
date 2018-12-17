@@ -1,6 +1,6 @@
 # Ganttilla
 
-Effortless roadmap visualisation tool. Visit [the demo page](https://youthful-leakey-912679.netlify.com/chart/empire) here to verify how it works.
+Effortless roadmap visualisation tool. Visit [the demo page](https://youthful-leakey-912679.netlify.com) here to verify how it works.
 
 ## How it works
 
@@ -77,3 +77,6 @@ To build the project run:
 
 Ganttilla is Open Source software released under the
 [Apache 2.0 license](http://www.apache.org/licenses/LICENSE-2.0.html).
+
+
+Copyright © 2018 Ocado
