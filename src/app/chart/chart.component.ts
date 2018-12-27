@@ -36,13 +36,13 @@ export class ChartComponent implements OnInit {
                 private staticFileService: StaticFileService) {
 
         this.route.params.subscribe(params => {
-            let teamName = params['teamName'];
+            const teamName = params['teamName'];
             this.chartData.dataTable = [['Label', 'Name', 'From', 'To']];
 
             this.staticFileService.getFile(`${teamName}.json`).subscribe(goals => {
                 this.milestones = goals;
                 const DONT_DISPLAY_FLAG = '#NOT_ON_ROADMAP';
-                var regex = RegExp(DONT_DISPLAY_FLAG);
+                const regex = RegExp(DONT_DISPLAY_FLAG);
                 this.filteredId = [0];
                 this.swimlanes = new Set();
 
@@ -73,17 +73,17 @@ export class ChartComponent implements OnInit {
 
 
     public clicked(event: ChartSelectEvent) {
-        let url = this.filteredId[event.row + 1];
+        const url = this.filteredId[event.row + 1];
         window.open(url, '_blank');
     }
 
     public ready(event: ChartReadyEvent) {
-        let container = document.getElementById('timeline');
-        let googleChartWrapper = this.cchart.wrapper;
-        let dateRangeStart = googleChartWrapper.getDataTable().getColumnRange(2);
-        let dateRangeEnd = googleChartWrapper.getDataTable().getColumnRange(3);
+        const container = document.getElementById('timeline');
+        const googleChartWrapper = this.cchart.wrapper;
+        const dateRangeStart = googleChartWrapper.getDataTable().getColumnRange(2);
+        const dateRangeEnd = googleChartWrapper.getDataTable().getColumnRange(3);
         // let options = {height: 41 * (this.chartData.dataTable.length - 1)};
-        let options = {height: 41 * this.swimlanes.size - 1};
+        const options = {height: 41 * this.swimlanes.size - 1};
 
 
         function addMarker(markerDate) {
