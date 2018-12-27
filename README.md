@@ -4,12 +4,12 @@ Effortless roadmap visualisation tool
 
 ## How it works
 
-The Ganttilla draws roadmap based on the `JSON` descriptor files in the assets directory. 
+The Ganttilla draws roadmap based on the `JSON` descriptor files in the assets directory.
 
-To make the most of it, you can automate generation of descriptor file. To do so, you can use either 
-provided script that uses GitLab and Milestones, or alternatively write your own. 
+To make the most of it, you can automate generation of descriptor file.
+This project provides scripts that turns GitLab or GitHub milestones to blocks(see the diagram below), along with links and due date. Alternatively, you can write your own script to transform any data into the format Ganttilla uses.
 
-With script ready run it from time to time (using cron for example) to regenerate data. 
+With script ready run it from time to time (using cron for example) to regenerate data.
 
 ### Diagram of concepts
 
@@ -26,9 +26,9 @@ The Ganttilla draws roadmap based on the `JSON` descriptor files in the assets d
 
 ### Descriptor file
 
-### Gitlab
+### GitLab
 
-To generate descriptor files, set following environment variables:
+To generate descriptor files for GitLab project, set following environment variables:
 
 `GITLAB_URL`
 
@@ -38,9 +38,29 @@ To generate descriptor files, set following environment variables:
 
 `GANTTILLA_OUTPUT_FILENAME`
 
+This will use milestones defined in the project and create blocks that represent them.
+
 Then run the following script:
 
 `python scripts/run.py gitlab`
+
+### GitHub
+
+To generate descriptor files for GitHub project, set following environment variables:
+
+`GITHUB_USERNAME`
+
+`GITHUB_REPOSITORY`
+
+`GITHUB_TOKEN`
+
+`GANTTILLA_OUTPUT_FILENAME`
+
+Then run the following script:
+
+`python scripts/run.py github`
+
+This will use milestones defined in the project and create blocks that represent them.
 
 The description file should contain list of objects, each one representing block of work.
 Take for example the [src/assets/empire.json](https://github.com/ocadotechnology/ganttilla/blob/master/src/assets/empire.json).

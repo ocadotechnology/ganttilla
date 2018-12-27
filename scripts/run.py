@@ -1,5 +1,6 @@
 from argparse import ArgumentParser
 from gitlab import query_gitlab
+from github import query_github
 from enum import Enum
 from os import environ
 from descriptor import write_descriptor
@@ -7,6 +8,7 @@ from descriptor import write_descriptor
 
 class Source(Enum):
     gitlab = 'gitlab'
+    github = 'github'
 
     def __str__(self):
         return self.value
@@ -31,4 +33,17 @@ if str(opts.source) == 'gitlab':
                           gitlab_project_id,
                           gitlab_token,
                           gitlab_pem)
+    write_descriptor(result, ganttilla_output_filename)
+elif str(opts.source) == "github":
+    try:
+        github_user = environ['GITHUB_USERNAME']
+        github_repo = environ['GITHUB_REPOSITORY']
+        github_token = environ['GITHUB_TOKEN']
+        ganttilla_output_filename = environ["GANTTILLA_OUTPUT_FILENAME"]
+    except KeyError as e:
+        exit("Environment variables GITHUB_USERNAME, GITHUB_REPOSITORY, \
+        GITHUB_TOKEN and GANTTILLA_OUTPUT_FILENAME need to be set")
+    result = query_github(github_user,
+                          github_repo,
+                          github_token)
     write_descriptor(result, ganttilla_output_filename)
