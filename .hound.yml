@@ -9,5 +9,4 @@ javascript:
 
 python:
   enabled: true
-
-
+  config_file: .flake8

@@ -1,16 +1,41 @@
 # Ganttilla
 
+Effortless roadmap visualisation tool
+
+## How it works
+
+The Ganttilla draws roadmap based on the `JSON` descriptor files in the assets directory.
+
+### Diagram of concepts
+=======
+
 Effortless roadmap visualisation tool. Visit [the demo page](https://youthful-leakey-912679.netlify.com) here to verify how it works.
 
 ## How it works
 
-The Ganttilla draws roadmap based on the `JSON` descriptor files in the assets directory. 
+The Ganttilla draws roadmap based on the `JSON` descriptor files in the assets directory.
 
 ### Diagram of concepts
-   
+
 ![diagram_of concepts](diagram.png)
 
 ### Descriptor file
+
+### Gitlab
+
+To generate descriptor files, set following environment variables:
+
+`GITLAB_URL`
+
+`GITLAB_PROJECT_ID`
+
+`GITLAB_TOKEN`
+
+`GANTTILLA_OUTPUT_FILENAME`
+
+Then run the following script:
+
+`python scripts/run.py gitlab`
 
 The description file should contain list of objects, each one representing block of work.
 Take for example the [src/assets/empire.json](https://github.com/ocadotechnology/ganttilla/blob/master/src/assets/empire.json).
@@ -20,16 +45,16 @@ Fields `start_date` and `end_date` should store dates in yyyy-MM-dd pattern. The
 ```json
 [
   {
-    "title": "Destroy the Death Star", 
-    "description": "Blow up that thing", 
+    "title": "Destroy the Death Star",
+    "description": "Blow up that thing",
     "start_date": "2018-12-10",
-    "end_date": "2019-03-09", 
-    "link": "https://github.com/ocadotechnology/ganttilla", 
-    "swimlane": "Freedom" 
+    "end_date": "2019-03-09",
+    "link": "https://github.com/ocadotechnology/ganttilla",
+    "swimlane": "Freedom"
   }
 ]
 ```
-   
+
 ## Getting help
 
 Having trouble with Ganttilla? We'd like to help!
@@ -56,7 +81,7 @@ requests. If you want to raise an issue, please follow the recommendations below
 
 ## Building from Source
 
-You need `npm` installed on your computer. 
+You need `npm` installed on your computer.
 
 To start the project locally run:
 
@@ -77,6 +102,3 @@ To build the project run:
 
 Ganttilla is Open Source software released under the
 [Apache 2.0 license](http://www.apache.org/licenses/LICENSE-2.0.html).
-
-
-Copyright © 2018 Ocado
