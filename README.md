@@ -4,10 +4,15 @@ Effortless roadmap visualisation tool
 
 ## How it works
 
-The Ganttilla draws roadmap based on the `JSON` descriptor files in the assets directory.
+The Ganttilla draws roadmap based on the `JSON` descriptor files in the assets directory. 
+
+To make the most of it, you can automate generation of descriptor file. To do so, you can use either 
+provided script that uses GitLab and Milestones, or alternatively write your own. 
+
+With script ready run it from time to time (using cron for example) to regenerate data. 
 
 ### Diagram of concepts
-=======
+
 
 Effortless roadmap visualisation tool. Visit [the demo page](https://youthful-leakey-912679.netlify.com) here to verify how it works.
 
@@ -102,3 +107,5 @@ To build the project run:
 
 Ganttilla is Open Source software released under the
 [Apache 2.0 license](http://www.apache.org/licenses/LICENSE-2.0.html).
+
+Copyright © 2018 Ocado
