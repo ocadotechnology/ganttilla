@@ -1,0 +1,12 @@
+Dockerfile
+.dockerignore
+e2e
+.flake8
+.git
+.gitignore
+.hound.yml
+LICENSE
+node_modules
+README.md
+scripts/__pycache__
+scripts/tests

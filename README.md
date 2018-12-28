@@ -26,6 +26,14 @@ The Ganttilla draws roadmap based on the `JSON` descriptor files in the assets d
 
 ### Descriptor file
 
+### GitLab/GitHub using Docker image
+
+The fastest way to generate a descriptor is running following command:
+
+`docker run --rm -it -v ${PWD}/descriptors:/ganttilla/generated-descriptors ocadotechnology/ganttilla:latest gitlab`
+
+Available commands are `github` and `gitlab`. After answering a few questions you can find your descriptor under `${PWD}/descriptors`.
+
 ### GitLab
 
 To generate descriptor files for GitLab project, set following environment variables:
@@ -63,7 +71,7 @@ Then run the following script:
 This will use milestones defined in the project and create blocks that represent them.
 
 The description file should contain list of objects, each one representing block of work.
-Take for example the [src/assets/empire.json](https://github.com/ocadotechnology/ganttilla/blob/master/src/assets/empire.json).
+Take for example the [src/assets/descriptors/empire.json](https://github.com/ocadotechnology/ganttilla/blob/master/src/assets/descriptors/empire.json).
 
 Fields `start_date` and `end_date` should store dates in yyyy-MM-dd pattern. The `swimlane` field is optional.
 
@@ -104,6 +112,22 @@ requests. If you want to raise an issue, please follow the recommendations below
 * If possible try to create a test-case or project that replicates the issue.
 
 
+## Quick start
+
+You need `docker` installed on your computer.
+
+### To start Ganttilla with example descriptors run the following command:
+
+`docker run -dit -p 4200:80 --name ganttilla ocadotechnology/ganttilla:latest`
+
+Go to your browser and type [http://localhost:4200](http://localhost:4200).
+
+### To start Ganttilla with your own descriptor run the following command:
+
+`docker run -dit -p 4200:80 -v /opt/ganttilla/first-order.json:/ganttilla/descriptors/first-order.json --name ganttilla ocadotechnology/ganttilla:latest`
+
+Go to your browser and type [http://localhost:4200](http://localhost:4200).
+
 ## Building from Source
 
 You need `npm` installed on your computer.
@@ -122,6 +146,12 @@ To build the project run:
 	$ npm install
 	$ npm run-script build
 ----
+
+You need `docker` installed on your computer.
+
+To build Docker image run:
+
+`docker build -t ocadotechnology/ganttilla:latest .`
 
 ## License
 
