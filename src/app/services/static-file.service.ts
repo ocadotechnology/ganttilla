@@ -21,6 +21,6 @@ export class StaticFileService {
     }
 
     getFile(filename: string): Observable<Goal[]> {
-        return this.http.get<Goal[]>(`./assets/${filename}`);
+        return this.http.get<Goal[]>(`./assets/descriptors/${filename}`);
     }
 }
