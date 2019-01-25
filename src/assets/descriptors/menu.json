@@ -1,0 +1,10 @@
+[
+  {
+    "routerLink": "/chart/empire",
+    "label": "Empire"
+  },
+  {
+    "routerLink": "/chart/rebellion",
+    "label": "Rebellion"
+  }
+]
