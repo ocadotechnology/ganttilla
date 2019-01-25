@@ -7,8 +7,9 @@
              alt="angular">
     </a>
 
-    <button mat-button routerLinkActive="mat-accent" routerLink="/chart/empire">Empire</button>
-    <button mat-button routerLinkActive="mat-accent" routerLink="/chart/rebellion">Rebellion</button>
+    <button mat-button routerLinkActive="mat-accent" routerLink="{{item.routerLink}}" *ngFor="let item of menu">
+        {{item.label}}
+    </button>
 
     <span class="fill-remaining-space"></span>
 
