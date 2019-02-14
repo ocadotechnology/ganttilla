@@ -68,6 +68,26 @@ Then run the following script:
 
 `python scripts/run.py github`
 
+### Jira
+
+To generate descriptor files for Jira project, set following environment variables:
+
+`JIRA_PROJECT`
+
+`JIRA_URL`
+
+`JIRA_USERNAME`
+
+`JIRA_TOKEN`
+
+`JIRA_START_DATE_FIELD` - usually a custom field
+
+`JIRA_END_DATE_FIELD`  - usually a custom field
+
+`GANTTILLA_OUTPUT_FILENAME`
+
+Set optional variable `JIRA_CUSTOM_JQL` if you want some customisation to your JQL query instead of just getting all issues assigned to a project.
+
 This will use milestones defined in the project and create blocks that represent them.
 
 The description file should contain list of objects, each one representing block of work.
