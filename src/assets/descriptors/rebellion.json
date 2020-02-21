@@ -2,79 +2,79 @@
   {
     "title": "Destroy the Death Star",
     "description": "Blow up that thing",
-    "start_date": "2019-03-01",
-    "end_date": "2019-07-15",
+    "start_date": "2020-03-01",
+    "end_date": "2020-07-15",
     "link": "https://github.com/ocadotechnology/ganttilla",
     "swimlane": "Freedom"
   },
   {
     "title": "Escape Hoth",
     "description": "Escape from Hoth planet",
-    "start_date": "2018-11-01",
-    "end_date": "2018-11-30",
+    "start_date": "2020-11-01",
+    "end_date": "2020-11-30",
     "link": "https://github.com/ocadotechnology/ganttilla",
     "swimlane": "Life"
   },
   {
     "title": "Ion cannon preparation",
-    "start_date": "2018-07-01",
-    "end_date": "2018-12-31",
+    "start_date": "2020-07-01",
+    "end_date": "2020-12-31",
     "description": "",
     "link": "https://github.com/ocadotechnology/ganttilla",
     "swimlane": "Defense"
   },
   {
     "title": "Shields",
-    "start_date": "2018-11-01",
-    "end_date": "2019-03-31",
+    "start_date": "2020-01-01",
+    "end_date": "2020-03-31",
     "description": "",
     "link": "https://github.com/ocadotechnology/ganttilla",
     "swimlane": "Defense"
   },
   {
     "title": "Laser core preparation",
-    "start_date": "2018-12-01",
-    "end_date": "2019-01-01",
+    "start_date": "2020-02-01",
+    "end_date": "2020-06-01",
     "description": "",
     "link": "https://github.com/ocadotechnology/ganttilla",
     "swimlane": "Defense"
   },
   {
     "title": "Tools takeover",
-    "start_date": "2018-10-01",
-    "end_date": "2018-11-01",
+    "start_date": "2020-10-01",
+    "end_date": "2020-11-01",
     "description": "",
     "link": "https://github.com/ocadotechnology/ganttilla",
     "swimlane": "Acquisition"
   },
   {
     "title": "Introduce new vehicles",
-    "start_date": "2019-06-01",
-    "end_date": "2019-12-31",
+    "start_date": "2020-06-01",
+    "end_date": "2020-12-31",
     "description": "",
     "link": "https://github.com/ocadotechnology/ganttilla",
     "swimlane": "Equipment"
   },
   {
     "title": "Vehicles status board",
-    "start_date": "2018-11-01",
-    "end_date": "2018-12-31",
+    "start_date": "2020-11-01",
+    "end_date": "2020-12-31",
     "description": "",
     "link": "https://github.com/ocadotechnology/ganttilla",
     "swimlane": "Equipment"
   },
   {
     "title": "Recruit new soldiers",
-    "start_date": "2018-12-12",
-    "end_date": "2018-12-31",
+    "start_date": "2020-12-12",
+    "end_date": "2020-12-31",
     "description": "We need to deliver several quick, small things for Recruitment team to attract new Devopses to our team.",
     "link": "https://github.com/ocadotechnology/ganttilla",
     "swimlane": "Army"
   },
   {
     "title": "Train soldiers",
-    "start_date": "2019-01-02",
-    "end_date": "2019-02-28",
+    "start_date": "2020-01-02",
+    "end_date": "2020-02-24",
     "description": "We need to prepare a DevOps workshop to attract and recruit new candidates. There must be a carrot in it.",
     "swimlane": "Army"
   }

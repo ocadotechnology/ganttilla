@@ -2,16 +2,16 @@
   {
     "title": "Build a Death Star",
     "description": "Destroy all the Rebels",
-    "start_date": "2018-12-01",
-    "end_date": "2019-02-09",
+    "start_date": "2020-02-01",
+    "end_date": "2020-05-01",
     "link": "https://github.com/ocadotechnology/ganttilla",
     "swimlane": "Domination"
   },
   {
     "title": "Invade Hoth",
     "description": "Destroy the Rebel base",
-    "start_date": "2018-11-01",
-    "end_date": "2018-11-30",
+    "start_date": "2020-08-01",
+    "end_date": "2020-09-30",
     "link": "https://github.com/ocadotechnology/ganttilla",
     "swimlane": "Domination"
   }
